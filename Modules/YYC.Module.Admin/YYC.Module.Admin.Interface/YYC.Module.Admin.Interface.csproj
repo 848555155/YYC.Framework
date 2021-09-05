@@ -9,4 +9,10 @@
     <ProjectReference Include="..\YYC.Module.Admin.Application\YYC.Module.Admin.Application.csproj" />
     <ProjectReference Include="..\YYC.Module.Admin.Infrastructure\YYC.Module.Admin.Infrastructure.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.AspNetCore.Mvc" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
 </Project>

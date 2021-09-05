@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using YYC.Module.Admin;
 
 namespace WebHost.Controllers;
 [ApiController]
@@ -10,23 +11,17 @@ public class WeatherForecastController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
+    private readonly AdminDbContext _adminDbContext;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(AdminDbContext adminDbContext)
     {
-        _logger = logger;
+        _adminDbContext = adminDbContext;
     }
 
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public async Task<bool> Refresh()
     {
-        var rng = new Random();
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = rng.Next(-20, 55),
-            Summary = Summaries[rng.Next(Summaries.Length)]
-        })
-        .ToArray();
+        await _adminDbContext.Database.EnsureDeletedAsync();
+        return await _adminDbContext.Database.EnsureCreatedAsync();
     }
 }
