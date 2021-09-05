@@ -5,6 +5,18 @@ VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{63914F34-044C-45B4-961D-30B9DBB5F1E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2147F5B3-134C-422B-AE02-89A73F86C575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YYC.Module.Admin", "YYC.Module.Admin", "{F5822245-D788-44B9-8418-EA352C39B4E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYC.Module.Admin.Application", "Modules\YYC.Module.Admin\YYC.Module.Admin.Application\YYC.Module.Admin.Application.csproj", "{2814C4A0-2F91-46BE-86F6-C52AB760EE55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYC.Module.Admin.Domain", "Modules\YYC.Module.Admin\YYC.Module.Admin.Domain\YYC.Module.Admin.Domain.csproj", "{33C211C7-C1FE-4D79-8872-EA82C18C0D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYC.Module.Admin.Infrastructure", "Modules\YYC.Module.Admin\YYC.Module.Admin.Infrastructure\YYC.Module.Admin.Infrastructure.csproj", "{A3A8C882-23D2-4F7B-B3E7-B7328C737274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YYC.Module.Admin.Interface", "Modules\YYC.Module.Admin\YYC.Module.Admin.Interface\YYC.Module.Admin.Interface.csproj", "{30D1CFAA-0ABE-49C6-818A-5CC695391427}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +27,34 @@ Global
 		{63914F34-044C-45B4-961D-30B9DBB5F1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63914F34-044C-45B4-961D-30B9DBB5F1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63914F34-044C-45B4-961D-30B9DBB5F1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2814C4A0-2F91-46BE-86F6-C52AB760EE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2814C4A0-2F91-46BE-86F6-C52AB760EE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2814C4A0-2F91-46BE-86F6-C52AB760EE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2814C4A0-2F91-46BE-86F6-C52AB760EE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C211C7-C1FE-4D79-8872-EA82C18C0D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C211C7-C1FE-4D79-8872-EA82C18C0D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C211C7-C1FE-4D79-8872-EA82C18C0D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C211C7-C1FE-4D79-8872-EA82C18C0D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3A8C882-23D2-4F7B-B3E7-B7328C737274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A8C882-23D2-4F7B-B3E7-B7328C737274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A8C882-23D2-4F7B-B3E7-B7328C737274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A8C882-23D2-4F7B-B3E7-B7328C737274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D1CFAA-0ABE-49C6-818A-5CC695391427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D1CFAA-0ABE-49C6-818A-5CC695391427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D1CFAA-0ABE-49C6-818A-5CC695391427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D1CFAA-0ABE-49C6-818A-5CC695391427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC76DB1A-4742-4D11-86D4-E0F51E35124F}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5822245-D788-44B9-8418-EA352C39B4E5} = {2147F5B3-134C-422B-AE02-89A73F86C575}
+		{2814C4A0-2F91-46BE-86F6-C52AB760EE55} = {F5822245-D788-44B9-8418-EA352C39B4E5}
+		{33C211C7-C1FE-4D79-8872-EA82C18C0D50} = {F5822245-D788-44B9-8418-EA352C39B4E5}
+		{A3A8C882-23D2-4F7B-B3E7-B7328C737274} = {F5822245-D788-44B9-8418-EA352C39B4E5}
+		{30D1CFAA-0ABE-49C6-818A-5CC695391427} = {F5822245-D788-44B9-8418-EA352C39B4E5}
 	EndGlobalSection
 EndGlobal

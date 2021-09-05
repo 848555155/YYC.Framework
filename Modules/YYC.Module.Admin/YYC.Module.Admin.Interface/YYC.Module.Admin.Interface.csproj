@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\YYC.Module.Admin.Application\YYC.Module.Admin.Application.csproj" />
+    <ProjectReference Include="..\YYC.Module.Admin.Infrastructure\YYC.Module.Admin.Infrastructure.csproj" />
+  </ItemGroup>
 </Project>

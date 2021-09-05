@@ -5,4 +5,9 @@
     <UseAppHost>false</UseAppHost>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\YYC.Module.Admin\YYC.Module.Admin.Interface\YYC.Module.Admin.Interface.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
