@@ -1,8 +1,8 @@
-
+using YYC.Module.Admin.Roles;
 
 namespace YYC.Module.Admin.Accounts;
 
-[Comment("账户表")]
+[Comment("账户")]
 public class Account
 {
     public Account(
@@ -31,5 +31,8 @@ public class Account
     public string Password { get; set; }
 
     [Comment("虚拟删除标记")]
+    [Required]
     public bool Deleted { get; set; } = false;
+
+    public List<Role> Roles { get; set; }
 }
