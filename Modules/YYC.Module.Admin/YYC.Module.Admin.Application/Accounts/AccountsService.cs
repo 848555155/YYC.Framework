@@ -1,11 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace YYC.Module.Admin.Accounts;
 
 public class AccountsService: IAccountsService
 {
     private readonly IAccountsRepository _repository;
-    public AccountsService(IAccountsRepository Repository)
+    public AccountsService(IAccountsRepository repository)
     {
-        _repository = Repository;
+        _repository = repository;
     }
 
     public Task<List<Account>> GetAsync()

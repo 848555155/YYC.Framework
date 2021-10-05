@@ -1,3 +1,7 @@
+using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+
 public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
